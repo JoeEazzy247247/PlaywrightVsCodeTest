@@ -55,10 +55,11 @@ public class Tests
 
     [Test]
     public async Task Playtest1(){
-        await page.Locator(".card", new() {
-            HasTextString = "Elements"
-        }).ClickAsync();
-                await page.GetByText("Elements").First.ClickAsync();
+        // await page.Locator(".card", new() {
+        //     HasTextString = "Elements"
+        // }).ClickAsync();
+
+        await page.GetByText("Elements").First.ClickAsync();
 
         var headerText = await page.GetByText("Elements").First.InnerTextAsync();
         Assert.That(headerText, Is.EqualTo("Elements"));
@@ -77,6 +78,14 @@ public class Tests
         await Task.Delay(3000);
     }
 
-    // [TearDown]
-    // public void CloseBrowser(){driver.Quit();}
+    [Test]
+    public async Task PlaywrightPageObjectTest(){
+        HomePage homePage = new HomePage(page);
+        await homePage.ClickElements();
+        ElementsPage epage = new ElementsPage(page);
+        var headerText = await epage.GetHeadertxt();
+        Assert.That(headerText, Is.EqualTo("Elements"));
+        await epage.ClickTextBox("Text Box");
+        await Task.Delay(3000);
+    }
 }
