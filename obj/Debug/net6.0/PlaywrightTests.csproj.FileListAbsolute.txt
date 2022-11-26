@@ -292,6 +292,10 @@ C:\Users\joeea\OneDrive\Desktop\TPlayrightDelete\PlaywrightTests\bin\Debug\net6.
 C:\Users\joeea\OneDrive\Desktop\TPlayrightDelete\PlaywrightTests\bin\Debug\net6.0\nunit.engine.api.dll
 C:\Users\joeea\OneDrive\Desktop\TPlayrightDelete\PlaywrightTests\bin\Debug\net6.0\nunit.engine.core.dll
 C:\Users\joeea\OneDrive\Desktop\TPlayrightDelete\PlaywrightTests\bin\Debug\net6.0\testcentric.engine.metadata.dll
+C:\Users\joeea\OneDrive\Desktop\TPlayrightDelete\PlaywrightTests\bin\Debug\net6.0\Testdata\testfile.txt
+C:\Users\joeea\OneDrive\Desktop\TPlayrightDelete\PlaywrightTests\bin\Debug\net6.0\selenium-manager\linux\selenium-manager
+C:\Users\joeea\OneDrive\Desktop\TPlayrightDelete\PlaywrightTests\bin\Debug\net6.0\selenium-manager\macos\selenium-manager
+C:\Users\joeea\OneDrive\Desktop\TPlayrightDelete\PlaywrightTests\bin\Debug\net6.0\selenium-manager\windows\selenium-manager.exe
 C:\Users\joeea\OneDrive\Desktop\TPlayrightDelete\PlaywrightTests\bin\Debug\net6.0\PlaywrightTests.deps.json
 C:\Users\joeea\OneDrive\Desktop\TPlayrightDelete\PlaywrightTests\bin\Debug\net6.0\PlaywrightTests.runtimeconfig.json
 C:\Users\joeea\OneDrive\Desktop\TPlayrightDelete\PlaywrightTests\bin\Debug\net6.0\PlaywrightTests.dll
@@ -310,6 +314,7 @@ C:\Users\joeea\OneDrive\Desktop\TPlayrightDelete\PlaywrightTests\bin\Debug\net6.
 C:\Users\joeea\OneDrive\Desktop\TPlayrightDelete\PlaywrightTests\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\joeea\OneDrive\Desktop\TPlayrightDelete\PlaywrightTests\bin\Debug\net6.0\NuGet.Frameworks.dll
 C:\Users\joeea\OneDrive\Desktop\TPlayrightDelete\PlaywrightTests\bin\Debug\net6.0\nunit.framework.dll
+C:\Users\joeea\OneDrive\Desktop\TPlayrightDelete\PlaywrightTests\bin\Debug\net6.0\WebDriver.dll
 C:\Users\joeea\OneDrive\Desktop\TPlayrightDelete\PlaywrightTests\bin\Debug\net6.0\System.Text.Json.dll
 C:\Users\joeea\OneDrive\Desktop\TPlayrightDelete\PlaywrightTests\bin\Debug\net6.0\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll
 C:\Users\joeea\OneDrive\Desktop\TPlayrightDelete\PlaywrightTests\bin\Debug\net6.0\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
@@ -387,8 +392,3 @@ C:\Users\joeea\OneDrive\Desktop\TPlayrightDelete\PlaywrightTests\obj\Debug\net6.
 C:\Users\joeea\OneDrive\Desktop\TPlayrightDelete\PlaywrightTests\obj\Debug\net6.0\PlaywrightTests.pdb
 C:\Users\joeea\OneDrive\Desktop\TPlayrightDelete\PlaywrightTests\obj\Debug\net6.0\PlaywrightTests.genruntimeconfig.cache
 C:\Users\joeea\OneDrive\Desktop\TPlayrightDelete\PlaywrightTests\obj\Debug\net6.0\ref\PlaywrightTests.dll
-C:\Users\joeea\OneDrive\Desktop\TPlayrightDelete\PlaywrightTests\bin\Debug\net6.0\selenium-manager\linux\selenium-manager
-C:\Users\joeea\OneDrive\Desktop\TPlayrightDelete\PlaywrightTests\bin\Debug\net6.0\selenium-manager\macos\selenium-manager
-C:\Users\joeea\OneDrive\Desktop\TPlayrightDelete\PlaywrightTests\bin\Debug\net6.0\selenium-manager\windows\selenium-manager.exe
-C:\Users\joeea\OneDrive\Desktop\TPlayrightDelete\PlaywrightTests\bin\Debug\net6.0\WebDriver.dll
-C:\Users\joeea\OneDrive\Desktop\TPlayrightDelete\PlaywrightTests\bin\Debug\net6.0\Testdata\testfile.txt
