@@ -10,41 +10,48 @@ public class Tests
     IPlaywright playwright;
     IBrowser browser;
     IPage page;
-
-    // [SetUp]
-    // public void Setup()
-    // {
-    //     driver = new ChromeDriver();
-    //     driver.Navigate().GoToUrl("https://demoqa.com");
-    // }
-
-    [SetUp]
-    public async Task Setup2()
-    {
-        playwright = await Playwright.CreateAsync();
-        browser = await playwright.Chromium.LaunchAsync(new(){
+    string option1 = "WebDriver";
+    string option2 = "Pdriver";
+    public async Task RunOption(string option){
+        if(option == "WebDriver")
+        {
+            driver = new ChromeDriver();
+            driver.Navigate().GoToUrl("https://demoqa.com");
+        }
+        else if(option == "Pdriver")
+        {
+            playwright = await Playwright.CreateAsync();
+            browser = await playwright.Chromium.LaunchAsync(new(){
             Headless = false
         });
-        page = await browser.NewPageAsync(new(){
+            page = await browser.NewPageAsync(new(){
             ViewportSize = new(){
                 Width = 1920,
                 Height = 1080
             }
         });
-        await page.GotoAsync("https://demoqa.com");
+            await page.GotoAsync("https://demoqa.com");
+        }
     }
 
-    // [Test]
-    // public async Task Test1()
-    // {
-    //     var components = 
-    //     driver.FindElements(By.CssSelector(".card"));
-    //     foreach(IWebElement ele in components){
-    //         if(ele.Text == "Elements")ele.Click();
-    //         break;
-    //     }
-    //     await Task.Delay(2000);
-    // }
+    [SetUp]
+    public async Task Setup()
+    {
+        await RunOption(option2);
+    }
+
+    [Test]
+    public async Task Test1()
+    {
+        var components = 
+        driver.FindElements(By.CssSelector(".card"));
+        foreach(IWebElement ele in components){
+            if(ele.Text == "Elements")ele.Click();
+            break;
+        }
+        await Task.Delay(2000);
+        driver.Quit();
+    }
 
     [Test]
     public async Task Playtest1(){
