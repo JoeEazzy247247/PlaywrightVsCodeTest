@@ -6,10 +6,10 @@ namespace PlaywrightTests;
 
 public class Tests
 {
-    IWebDriver driver;
-    IPlaywright playwright;
-    IBrowser browser;
-    IPage page;
+    IWebDriver? driver;
+    IPlaywright? playwright;
+    IBrowser? browser;
+    IPage? page;
     string option1 = "WebDriver";
     string option2 = "Pdriver";
     public async Task RunOption(string option){
@@ -45,13 +45,13 @@ public class Tests
     public async Task Test1()
     {
         var components = 
-        driver.FindElements(By.CssSelector(".card"));
-        foreach(IWebElement ele in components){
+        driver?.FindElements(By.CssSelector(".card"));
+        foreach(IWebElement ele in components!){
             if(ele.Text == "Elements")ele.Click();
             break;
         }
         await Task.Delay(2000);
-        driver.Quit();
+        driver?.Quit();
     }
 
     [Test]
@@ -60,7 +60,7 @@ public class Tests
         //     HasTextString = "Elements"
         // }).ClickAsync();
 
-        await page.GetByText("Elements").First.ClickAsync();
+        await page?.GetByText("Elements").First.ClickAsync()!;
 
         var headerText = await page.GetByText("Elements").First.InnerTextAsync();
         Assert.That(headerText, Is.EqualTo("Elements"));
@@ -81,9 +81,9 @@ public class Tests
 
     [Test]
     public async Task PlaywrightPageObjectTest(){
-        HomePage homePage = new HomePage(page);
+        HomePage homePage = new HomePage(page!);
         await homePage.ClickElements();
-        ElementsPage epage = new ElementsPage(page);
+        ElementsPage epage = new ElementsPage(page!);
         var headerText = await epage.GetHeadertxt();
         Assert.That(headerText, Is.EqualTo("Elements"));
         await epage.ClickTextBox("Text Box");
